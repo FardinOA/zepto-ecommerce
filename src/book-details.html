@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book Details</title>
+
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <header class="shadow-sm fixed w-full top-0 left-0 z-50 py-4 bg-white">
+            <div class="container">
+                <nav
+                    class="base-container flex items-center justify-between gap-2 lg:gap-6"
+                >
+                    <a href="index.html">
+                        <img
+                            src="/assets/img/logo.png"
+                            alt="logo"
+                            class="w-32 lg:w-40"
+                        />
+                    </a>
+                    <div
+                        class="w-full lg:flex items-center bg-primary/10 rounded-md hidden"
+                    >
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Search for books..."
+                            class="p-2 w-full"
+                        />
+                        <button aria-label="search" class="icon bg-inherit">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <a href="wishlist.html"
+                            ><i class="ri-heart-line"></i
+                        ></a>
+                        <div class="flex items-center">
+                            <i class="ri-user-line"></i>
+                            <a href="#"
+                                ><span class="font-semibold text-black"
+                                    >Account</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container mx-auto px-4 py-8">
+                <div
+                    id="book-details"
+                    class="bg-white shadow-lg rounded-lg p-6"
+                >
+                    <!-- Book details will be rendered here -->
+                </div>
+            </div>
+        </main>
+        <script src="book-details.js"></script>
+    </body>
+</html>

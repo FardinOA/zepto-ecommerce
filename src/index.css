@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --text: 130 43% 3%;
+        --background: 129 54% 97%;
+        --primary: 130 54% 53%;
+        --secondary: 130 60% 71%;
+        --accent: 130 66% 61%;
+    }
+    .dark {
+        --text: 129 47% 97%;
+        --background: 128 50% 3%;
+        --primary: 130 54% 47%;
+        --secondary: 130 59% 29%;
+        --accent: 130 66% 39%;
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --text: 130 43% 3%;
+            --background: 129 54% 97%;
+            --primary: 130 54% 53%;
+            --secondary: 130 60% 71%;
+            --accent: 130 66% 61%;
+        }
+    }
+    /* @media (prefers-color-scheme: dark) {
+        :root {
+            --text: 129 47% 97%;
+            --background: 128 50% 3%;
+            --primary: 130 54% 47%;
+            --secondary: 130 59% 29%;
+            --accent: 130 66% 39%;
+        }
+    } */
+}
+
+i {
+    @apply text-[24px];
+}
+
+.btn {
+    @apply px-1 py-2 text-sm font-medium rounded-md shadow-sm;
+}
+
+.icon {
+    @apply text-[24px] size-9;
+}
+
+input {
+    @apply px-4 py-2 text-sm font-medium rounded-md w-full bg-inherit focus:outline-primary;
+}
